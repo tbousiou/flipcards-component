@@ -123,7 +123,7 @@ class FlipCard extends LitElement {
  * @element flip-card-grid
  * @prop {Number} maxCardsPerRow - The maximum number of cards to display per row.
  */
-export class FlipCardGrid extends LitElement {
+class FlipCardGrid extends LitElement {
   static properties = {
     maxCardsPerRow: { type: Number, attribute: 'max-cards-per-row' },
   };
