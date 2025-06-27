@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flip Card Page</title>
+    <!-- 1. Import the grid component -->
+    <script type="module" src="./flip-card-grid.js"></script>
+</head>
+
+<body>
+
+    <h1>My Declarative Card Grid</h1>
+
+    <!-- 2. Use the components directly in your HTML -->
+    <flip-card-grid max-cards-per-row="3">
+
+        <flip-card>
+            <div slot="front">
+                <h3>Lorem, ipsum dolor sit amet</h3>
+                <img src="https://placehold.co/400" width="100%" alt="Placeholder Image">
+                <p>Rerum facilis accusantium ipsam ad non! Sed ea repudiandae rem unde, earum, recusandae aliquam
+                    nostrum accusamus nemo ipsam eos. Molestias, reiciendis saepe!</p>
+            </div>
+            <div slot="back">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ipsa quibusdam, atque
+                    recusandae dolorum libero nesciunt ipsam ut molestiae ab, aliquid dolores incidunt, quod consectetur
+                    dolorem eos pariatur inventore quidem!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ipsa quibusdam, atque
+                    recusandae dolorum libero nesciunt ipsam ut molestiae ab, aliquid dolores incidunt, quod consectetur
+                    dolorem eos pariatur inventore quidem!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ipsa quibusdam, atque
+                    recusandae dolorum libero nesciunt ipsam ut molestiae ab, aliquid dolores incidunt, quod consectetur
+                    dolorem eos pariatur inventore quidem!</p>
+            </div>
+        </flip-card>
+
+        <flip-card aspect-ratio="1/1">
+            <div slot="front">Square Card</div>
+            <div slot="back">1:1 Ratio</div>
+        </flip-card>
+
+        <flip-card aspect-ratio="16/9">
+            <div slot="front">Widescreen Card</div>
+            <div slot="back">16:9 Ratio</div>
+        </flip-card>
+
+    </flip-card-grid>
+
+    <h1>Seasons of the Year</h1>
+
+    <flip-card-grid max-cards-per-row="4">
+        <!-- Spring Card -->
+        <flip-card aspect-ratio="1/1">
+            <div slot="front">
+                <div class="card-content">
+                    <div class="icon">🌸</div>
+                    <h3 class="title">Spring</h3>
+                    <p class="description">March - May</p>
+                </div>
+            </div>
+            <div slot="back">
+                <div class="back-content">
+                    <h3>Spring</h3>
+                    <p>A time of renewal and growth as flowers bloom and days get longer.</p>
+                </div>
+            </div>
+        </flip-card>
+
+        <!-- Summer Card -->
+        <flip-card aspect-ratio="1/1">
+            <div slot="front">
+                <div class="card-content">
+                    <div class="icon">☀️</div>
+                    <h3 class="title">Summer</h3>
+                    <p class="description">June - August</p>
+                </div>
+            </div>
+            <div slot="back">
+                <div class="back-content">
+                    <h3>Summer</h3>
+                    <p>Warm days perfect for outdoor activities and vacations.</p>
+                </div>
+            </div>
+        </flip-card>
+
+        <!-- Fall Card -->
+        <flip-card aspect-ratio="1/1">
+            <div slot="front">
+                <div class="card-content">
+                    <div class="icon">🍂</div>
+                    <h3 class="title">Fall</h3>
+                    <p class="description">September - November</p>
+                </div>
+            </div>
+            <div slot="back">
+                <div class="back-content">
+                    <h3>Fall</h3>
+                    <p>Colorful leaves and cooler temperatures mark this harvest season.</p>
+                </div>
+            </div>
+        </flip-card>
+
+        <!-- Winter Card -->
+        <flip-card aspect-ratio="1/1">
+            <div slot="front">
+                <div class="card-content">
+                    <div class="icon">❄️</div>
+                    <h3 class="title">Winter</h3>
+                    <p class="description">December - February</p>
+                </div>
+            </div>
+            <div slot="back">
+                <div class="back-content">
+                    <h3>Winter</h3>
+                    <p>A time of rest and celebration with snow and holiday gatherings.</p>
+                </div>
+            </div>
+        </flip-card>
+    </flip-card-grid>
+
+</body>
+
+</html>
