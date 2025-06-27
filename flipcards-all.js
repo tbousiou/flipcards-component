@@ -1,4 +1,6 @@
-import { LitElement, html, css } from 'https://unpkg.com/lit@latest?module';
+// OpenEdX compatible version - uses global Lit instead of imports
+
+const { LitElement, html, css } = window.Lit || {};
 
 /**
  * A simple, accessible flip card component.
