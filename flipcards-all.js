@@ -8,7 +8,7 @@ import { LitElement, html, css } from 'https://unpkg.com/lit@latest?module';
  * @slot back - Content for the back of the card.
  * @attr {String} aspect-ratio - The aspect ratio of the card (width/height), default is "2/3"
  */
-export class FlipCard extends LitElement {
+class FlipCard extends LitElement {
   static properties = {
     flipped: { type: Boolean, reflect: true },
     aspectRatio: { type: String, attribute: 'aspect-ratio', reflect: true }
@@ -113,7 +113,7 @@ export class FlipCard extends LitElement {
   }
 }
 
-customElements.define('flip-card', FlipCard);
+
 
 /**
  * A responsive grid component to display and manage multiple flip-cards.
@@ -225,5 +225,6 @@ export class FlipCardGrid extends LitElement {
   }
 }
 
+customElements.define('flip-card', FlipCard);
 customElements.define('flip-card-grid', FlipCardGrid);
 
